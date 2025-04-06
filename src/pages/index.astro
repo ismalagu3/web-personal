@@ -1,11 +1,140 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
+import Image from "astro/components/Image.astro";
 ---
 
 <Layout>
-	<Welcome />
+	<header class="container flex gap-6">
+		<Image
+			src="/images/IsmaelLagunilla.jpg"
+			alt="Ismael Lagunilla"
+			width={200}
+			height={240}
+			class="border-4 border-b-stone-950 mt-10 mx-10"
+			loading="lazy"
+		/>
+
+		<div class="text-2xl grid">
+			<p>Ismael <span class="uppercase">Lagunilla</span></p>
+			<p>QA Manager</p>
+		</div>
+		<section></section>
+	</header>
+
+	<main class="container grid grid-cols-1 md:grid-cols-2 gap-6 px-10 py-10">
+		<div class="max-w-xl h-auto">
+			<h1 class="">SOBRE MI</h1>
+			<article>
+				<p>
+					Apasionado de la calidad y la excelencia en el desarrollo de
+					software, con experiencia en la industria del digital
+					signage. Mi enfoque meticuloso en la detección de problemas
+					y mi capacidad para trabajar en equipo me han permitido
+					aprender y crecer en este campo de manera constante.
+				</p>
+			</article>
+		</div>
+		<div>
+			<h1 class="">EXPERIENCIA</h1>
+			<article>
+				<h2 class="py-1"><strong>QA Manager</strong></h2>
+				<p class="py-1"><strong>ICON Multimedia</strong></p>
+				<p class="py-1">2022 - Presente</p>
+				<ul class="list-disc pl-5 py-2">
+					<li>
+						Dirigir y gestionar el departamento de QA, asegurando la
+						calidad del software encada fase del desarrollo.
+					</li>
+					<li>
+						Definir y gestionar casos de prueba y asegurar su
+						correcta implementación.
+					</li>
+					<li>
+						Automatizar pruebas E2E de la web utilizando Cypress y
+						Playwright.
+					</li>
+					<li>
+						Implementar pruebas en pipelines CI/CD con Azure DevOps
+						para mejorar laintegración continua.
+					</li>
+					<li>
+						Ejecutar pruebas de carga para evaluar el rendimiento y
+						escalabilidad del software.
+					</li>
+					<li>
+						Gestionar la documentación técnica y crear manuales para
+						clientes.
+					</li>
+					<li>
+						Generar reportes detallados de bugs y colaborar
+						estrechamente con el equipo de desarrollo para su
+						resolución.
+					</li>
+				</ul>
+			</article>
+		</div>
+		<div>
+			<h1 class="">CONTACTO</h1>
+			<p>+34 618 034 133</p>
+			<p>ismaellagunillag@gmail.com</p>
+			<p>Palencia</p>
+		</div>
+		<div>
+			<h1 class="">FORMACIÓN</h1>
+			<article>
+				<h2>
+					TÉCNICO SUPERIOR EN DESARROLLO DE APLICACIONES
+					MULTIPLATAFORMA
+				</h2>
+				<p>
+					<strong>CIFP Camino de la Miranda</strong>, Palencia
+				</p>
+				<p>2024 - actualidad</p>
+			</article>
+			<article>
+				<h2>
+					TÉCNICO SUPERIOR EN ADMINISTRACIÓN DE SISTEMAS INFORMÁTICOS
+					EN RED
+				</h2>
+				<p>
+					<strong>CPES Don Bosco</strong>, Villamuriel - Palencia
+				</p>
+				<p>2020 - 2022</p>
+			</article>
+		</div>
+		<div>
+			<h1 class="">HERRAMIENTAS Y TECNOLOGÍAS</h1>
+			<article>
+				<ul class="list-disc pl-5 py-2">
+					<li>
+						<strong>Automatización de Pruebas:</strong> Playwright (C#
+						- .NET 8), Cypress (JS), Appium (aprendiendo).
+					</li>
+					<li>
+						<strong>Azure DevOps:</strong> Integración de pruebas en
+						pipelines CI/CD y gestión de proyectos.
+					</li>
+					<li>
+						<strong>Pruebas de Carga:</strong> JMeter y Locust (Configuración
+						de pruebas de carga y análisis de resultados).
+					</li>
+					<li>
+						<strong>Pruebas de API:</strong> Postman y Playwright.
+					</li>
+					<li>
+						<strong>Pruebas de EMAIL:</strong> Mailinator (aprendiendo)
+					</li>
+				</ul>
+			</article>
+		</div>
+		<div>
+			<h1 class="">IDIOMAS</h1>
+			<article>
+				<ul class="list-disc pl-5 py-2">
+					<li>Español - nativo</li>
+					<li>Inglés - Nivel intermedio (B1)</li>
+				</ul>
+			</article>
+		</div>
+	</main>
 </Layout>
